@@ -1,0 +1,84 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+* {
+    font-family: 'Arial';
+}
+
+.main {
+    background-color: #F6F6F6;
+    height: 100vh;
+}
+
+.products {
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+    margin: 60px;
+}
+
+.products__row {
+    width: 1180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card {
+    width: 380px;
+    height: 480px;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+    border-radius: 12px;
+    background: #FFFFFF;
+}
+
+.product-card__container {
+    margin: 0 24px;
+    height: 170px;
+}
+
+.product-card__image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.product-card__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2F2F2F;
+    margin: 24px 0;
+}
+
+.product-card__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F2F2F;
+    margin: 24px 0;
+}
+
+.product-card__button {
+    height: 48px;
+    border: 2px solid #42940F;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #42940F;
+    margin: 0 24px;
+}
