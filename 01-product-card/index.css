@@ -1,6 +1,6 @@
 /* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
 * {
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     margin: 0;
 }
 
@@ -11,20 +11,20 @@
     min-width: 1200px;
 }
 
-.products {
+.products-of-the-week {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.products__title {
+.products-of-the-week__title {
     font-weight: 900;
     font-size: 48px;
     margin: 60px;
 }
 
-.products__row {
+.products-of-the-week__container {
     width: 1180px;
     display: flex;
     justify-content: space-between;
@@ -33,14 +33,9 @@
 .product-card {
     width: 380px;
     height: 480px;
-    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 0 45px -4px rgba(0, 0, 0, 0.18);
     border-radius: 12px;
     background: #FFFFFF;
-}
-
-.product-card__container {
-    margin: 0 24px;
-    height: 170px;
 }
 
 .product-card__image {
@@ -48,6 +43,11 @@
     background-image: url(img.png);
     background-size: cover;
     border-radius: 8px 8px 0 0;
+}
+
+.product-card__container {
+    margin: 0 24px;
+    height: 170px;
 }
 
 .product-card__title {
@@ -75,19 +75,32 @@
     justify-content: center;
     color: #42940F;
     margin: 0 24px;
+    cursor: pointer;
 }
 
-.product-card__button_disabled {
-    height: 48px;
-    border-radius: 8px;
-    font-weight: 900;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 24px;
+.product-card__button:hover {
+    background-color: #42940F;
+    color: #FFFFFF;
+}
+
+.product-card__button:active {
+    background-color: #1F5200;
+    color: #FFFFFF;
+    border: 2px solid #1F5200;
+}
+
+.disabled {
     background: #4E4E4E;
     color: #FFFFFF;
+    border: 2px solid #4E4E4E;
+    cursor: auto;
+}
+
+.disabled:hover {
+    background: #4E4E4E;
+    color: #FFFFFF;
+    border: 2px solid #4E4E4E;
+    cursor: auto;
 }
 
 .product-card__tag {
@@ -98,9 +111,43 @@
     position: relative;
     top: 16px;
 }
-.pink{
+
+.pink {
     background: #FDCFF3;
 }
+
 .orange {
     background: #FFCF56;
+}
+
+@media screen and (max-width: 1190px) {
+    .main {
+        height: 1720px;
+    }
+
+    .products-of-the-week {
+        height: 1680px;
+        width: 100vw;
+    }
+
+    .products-of-the-week__container {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products-of-the-week__title {
+        text-align: center;
+    }
+
+    .main {
+        height: 1780px;
+    }
+
+    .products-of-the-week {
+        height: 1750px;
+    }
 }
