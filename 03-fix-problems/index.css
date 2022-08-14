@@ -4,8 +4,7 @@
 }
 
 p {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin: 1em 0;
 }
 
 main {
@@ -22,7 +21,7 @@ main {
 
 .article__heading {
     color: palevioletred;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1.5rem;
 }
 
 .article__lead {
