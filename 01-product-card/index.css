@@ -89,14 +89,14 @@
     border: 2px solid #1F5200;
 }
 
-.disabled {
+.product-card__button--disabled {
     background: #4E4E4E;
     color: #FFFFFF;
     border: 2px solid #4E4E4E;
     cursor: auto;
 }
 
-.disabled:hover {
+.product-card__button--disabled:hover {
     background: #4E4E4E;
     color: #FFFFFF;
     border: 2px solid #4E4E4E;
@@ -112,11 +112,11 @@
     top: 16px;
 }
 
-.pink {
+.product-card__tag--pink {
     background: #FDCFF3;
 }
 
-.orange {
+.product-card__tag--orange {
     background: #FFCF56;
 }
 
@@ -138,7 +138,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 545px) {
     .products-of-the-week__title {
         text-align: center;
     }
