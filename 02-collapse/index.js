@@ -1,5 +1,6 @@
 const showBtn = document.querySelector(".collapsible__action--visible");
 const hideBtn = document.querySelector(".collapsible__action--hidden");
+
 let buttonChange = false
 
 const anim = document
@@ -22,15 +23,17 @@ function hideContent() {
     buttonChangeHandler()
 }
 
+function changeDisplayButton(displayFirst, displaySecond) {
+    return (hideBtn.style.display = displayFirst,
+        showBtn.style.display = displaySecond,
+        buttonChange = !buttonChange)
+}
+
 function buttonChangeHandler() {
     if (buttonChange) {
-        hideBtn.style.display = "block";
-        showBtn.style.display = "none";
-        buttonChange = !buttonChange
+        changeDisplayButton("block", "none")
     } else {
-        hideBtn.style.display = "none";
-        showBtn.style.display = "block";
-        buttonChange = !buttonChange
+        changeDisplayButton("none", "block")
     }
 }
 
