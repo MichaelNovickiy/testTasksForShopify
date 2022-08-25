@@ -7,8 +7,8 @@
 .main {
     background-color: #F6F6F6;
     height: 100vh;
-    width: 100vw;
-    min-width: 1200px;
+    /*width: 100vw;*/
+    /*min-width: 1200px;*/
 }
 
 .products-of-the-week {
@@ -21,11 +21,12 @@
 .products-of-the-week__title {
     font-weight: 900;
     font-size: 48px;
-    margin: 60px;
+    margin-top: 78px;
 }
 
 .products-of-the-week__container {
     width: 1180px;
+    margin-top: 43px;
     display: flex;
     justify-content: space-between;
 }
@@ -33,38 +34,38 @@
 .product-card {
     width: 380px;
     height: 480px;
+    margin-bottom: 42px;
     box-shadow: 0 0 45px -4px rgba(0, 0, 0, 0.18);
     border-radius: 12px;
     background: #FFFFFF;
 }
 
 .product-card__image {
-    height: 216px;
+    height: 212px;
     background-image: url(img.png);
     background-size: cover;
-    border-radius: 8px 8px 0 0;
+    border-radius: 14px 14px 0 0;
 }
 
 .product-card__container {
     margin: 0 24px;
-    height: 170px;
+    height: 172px;
 }
 
 .product-card__title {
     font-weight: 900;
     font-size: 24px;
     color: #2F2F2F;
-    margin: 24px 0;
+    margin: 26px 0 19px;
 }
 
 .product-card__text {
     line-height: 24px;
     color: #2F2F2F;
-    margin: 24px 0;
 }
 
 .product-card__button {
-    height: 48px;
+    height: 43px;
     border: 2px solid #42940F;
     border-radius: 8px;
     font-style: normal;
@@ -106,18 +107,22 @@
 .product-card__tag {
     border-radius: 8px;
     color: #2F2F2F;
-    padding: 5px 20px;
-    margin-left: 16px;
+    padding: 3px 16px;
     position: relative;
-    top: 16px;
+    top: 20px;
+    left: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-.product-card__tag--pink {
+.product-card__tag--new {
     background: #FDCFF3;
 }
 
-.product-card__tag--orange {
+.product-card__tag--last {
     background: #FFCF56;
+    margin-left: 12px;
 }
 
 @media screen and (max-width: 1190px) {
