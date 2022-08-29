@@ -6,7 +6,7 @@
 
 .main {
     background-color: #F6F6F6;
-    height: 100vh;
+    min-height: 100vh;
     /*width: 100vw;*/
     /*min-width: 1200px;*/
 }
@@ -21,20 +21,19 @@
 .products-of-the-week__title {
     font-weight: 900;
     font-size: 48px;
-    margin-top: 78px;
+    margin: 78px 20px 43px;
 }
 
 .products-of-the-week__container {
-    width: 1180px;
-    margin-top: 43px;
+    max-width: 1180px;
     display: flex;
     justify-content: space-between;
 }
 
 .product-card {
-    width: 380px;
-    height: 480px;
-    margin-bottom: 42px;
+    max-width: 380px;
+    min-height: 480px;
+    margin: 20px  20px 42px;
     box-shadow: 0 0 45px -4px rgba(0, 0, 0, 0.18);
     border-radius: 12px;
     background: #FFFFFF;
@@ -49,7 +48,7 @@
 
 .product-card__container {
     margin: 0 24px;
-    height: 172px;
+    min-height: 172px;
 }
 
 .product-card__title {
@@ -75,7 +74,7 @@
     align-items: center;
     justify-content: center;
     color: #42940F;
-    margin: 0 24px;
+    margin: 22px 24px;
     cursor: pointer;
 }
 
@@ -126,13 +125,10 @@
 }
 
 @media screen and (max-width: 1190px) {
-    .main {
-        height: 1720px;
-    }
-
-    .products-of-the-week {
-        height: 1680px;
-        width: 100vw;
+    .products-of-the-week__title {
+        text-align: center;
+        font-weight: 800;
+        font-size: 38px;
     }
 
     .products-of-the-week__container {
@@ -143,16 +139,3 @@
     }
 }
 
-@media screen and (max-width: 545px) {
-    .products-of-the-week__title {
-        text-align: center;
-    }
-
-    .main {
-        height: 1780px;
-    }
-
-    .products-of-the-week {
-        height: 1750px;
-    }
-}
