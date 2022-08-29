@@ -23,9 +23,9 @@ function hideContent() {
     buttonChangeHandler()
 }
 
-function changeDisplayButton(displayFirst, displaySecond) {
-    return (hideBtn.style.display = displayFirst,
-        showBtn.style.display = displaySecond,
+function changeDisplayButton(onDisplayHide, onDisplayShow) {
+    return (hideBtn.style.display = onDisplayHide,
+        showBtn.style.display = onDisplayShow,
         buttonChange = !buttonChange)
 }
 
